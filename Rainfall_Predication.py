@@ -29,6 +29,8 @@ regressor.fit(X_train, y_train)
 
 # Predicting the Test set results
 y_pred = regressor.predict(X_test)
+from sklearn.metrics import mean_absolute_error
+print("MAE",mean_absolute_error(y_test,y_pred))
 
 # Visualising the Training set results 
 
